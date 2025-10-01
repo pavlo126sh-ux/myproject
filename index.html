@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад занять</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+            font-weight: 600;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        thead th {
+            background-color: #343a40;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #000;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        td.day {
+            font-weight: 600;
+            font-size: 1.1em;
+            background-color: #f1f3f5;
+            border-right: 1px solid #dee2e6;
+        }
+        
+        .split-cell {
+            padding: 0;
+        }
+        .split-cell .numerator {
+            padding: 12px;
+        }
+        .split-cell .denominator {
+            padding: 12px;
+            border-top: 1px solid #dee2e6;
+        }
+        .split-cell .helper-text {
+            display: block;
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-bottom: 4px;
+        }
+
+        .lecture { background-color: rgba(23, 162, 184, 0.1); }
+        .practical { background-color: rgba(255, 193, 7, 0.1); }
+        .lab { background-color: rgba(40, 167, 69, 0.1); }
+        .other { background-color: rgba(220, 53, 69, 0.1); }
+        .exam { background-color: rgba(108, 117, 125, 0.1); }
+    </style>
+</head>
+<body>
+
+    <h1>Розклад занять групи П-31</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Дні</th>
+                <th>Пара</th>
+                <th>Предмет, викладач</th>
+                <th>Аудиторія</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day" rowspan="4">Понеділок</td>
+                <td>1</td>
+                <td class="split-cell">
+                    <div class="numerator practical"><span class="helper-text">чисельник</span>ООП (пр) Оляніна Н.В.</div>
+                    <div class="denominator exam"><span class="helper-text">знаменник</span>Осн. правозн та патентознавства в ІТ (є) Білянеький О.В.</div>
+                </td>
+                <td>218</td>
+            </tr>
+            <tr>
+                <td>2</td><td class="lab">Алгоритм і СД (л.р) Стельмащук Л.В.</td><td>217</td>
+            </tr>
+            <tr>
+                <td>3</td><td class="lecture">ООП (л) Оляніна Н.В.</td><td>219</td>
+            </tr>
+            <tr>
+                <td>4</td><td class="lecture">Алг. і структури даних (л) Стельмащук Л.В.</td><td>219</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="5">Вівторок</td>
+                <td>1</td><td class="practical">ООП (пр) Бойко О.І.</td><td>217</td>
+            </tr>
+            <tr>
+                <td>2</td><td class="lab">Вебтехнології (л.р) Чаплінський Р.І.</td><td>218</td>
+            </tr>
+            <tr>
+                <td>3</td><td class="lecture">Осн. правозн та патентознавства в ІТ (л) Білянський О.В.</td><td>118</td>
+            </tr>
+            <tr>
+                <td>4</td><td class="lecture">Соціальна філософія (л) Ойойко Н.М.</td><td>102</td>
+            </tr>
+             <tr>
+                <td>14:30</td><td class="other">Виховна година</td><td>218</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="4">Середа</td>
+                <td>1</td><td class="lab">ІЗВП (л.р.) Барціховська К.І.</td><td>212</td>
+            </tr>
+            <tr>
+                <td>2</td><td class="lecture">ІЗВП (л) Барціховська К.І.</td><td>212</td>
+            </tr>
+            <tr>
+                <td>3</td><td class="lab">ІЗВП (л.р.) Барціховська К.І.</td><td>212</td>
+            </tr>
+            <tr>
+                <td>4</td><td class="lecture">Вебтехнології (л) Чаплінський Р.І.</td><td>218</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="5">Четвер</td>
+                <td>1</td><td class="lab">Інф. техн.(л.р) Бойко О.І.</td><td>218</td>
+            </tr>
+            <tr>
+                <td>2</td><td class="exam">Соціальна філософія (є) Ойойко Н.М.</td><td>102</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                 <td class="split-cell">
+                    <div class="numerator"><span class="helper-text">1 підгрупа</span>Ін. мова (за проф. спрямуванням) Наконечна Ю.О.</div>
+                    <div class="denominator"><span class="helper-text">2 підгрупа</span>Ін. мова (за проф. спрямуванням) Криль Л.В.</div>
+                </td>
+                <td class="split-cell">
+                    <div class="numerator">219</div>
+                    <div class="denominator">34</div>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td><td class="lecture">Інформаційні технології (л) Бойко О.І.</td><td>212</td>
+            </tr>
+             <tr>
+                <td>5</td><td class="lecture">Упр. проект. та комунікац. (л) Чаплінський Р.І.</td><td>-</td>
+            </tr>
+            <tr>
+                <td class="day" rowspan="2">П'ятниця</td>
+                <td>2</td><td class="lab">Упр. пр. та ком (л.р) Чаплінський Р.І</td><td>218</td>
+            </tr>
+            <tr>
+                <td>3</td><td class="other">Фізичне виховання Кузик А.А.</td><td>СЗ</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
